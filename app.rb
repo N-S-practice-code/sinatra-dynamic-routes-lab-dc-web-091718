@@ -22,7 +22,7 @@ class App < Sinatra::Base
   
   get "/say/:word1/:word2/:word3/:word4/:word5" do
     @name = params[:word1]
-    [params[:word1],params[:word1],params[:word1],params[:word1],params[:word1]].join(" ")
+    [params[:word1],params[:word1],params[:word1],params[:word1],params[:word1]].join(" ")+"."
   end
   
   get "/:operation/:number1/:number2" do
