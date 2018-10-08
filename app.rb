@@ -27,6 +27,8 @@ class App < Sinatra::Base
   
   get "/:operation/:number1/:number2" do
     @operation = params[:operation]
+    puts params[:number1]
+    puts params[:number2]
     return "#{params[:number1]+params[:number2]}." if @operation=="add"
     "10"
   end
