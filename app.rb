@@ -30,6 +30,10 @@ class App < Sinatra::Base
     # puts params[:number1]
     # puts params[:number2]
     return "#{(params[:number1].to_i)+(params[:number2].to_i)}." if @operation=="add"
+    return "#{(params[:number1].to_i)-(params[:number2].to_i)}." if @operation=="subtract"
+    return "#{(params[:number1].to_i)*(params[:number2].to_i)}." if @operation=="multipy"
+    return "#{(params[:number1].to_i)/(params[:number2].to_i)}." if @operation=="divide"
+
     "10"
   end
 
